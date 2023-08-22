@@ -18,6 +18,9 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit from plato device
 $(call inherit-product, device/xiaomi/plato/device.mk)
 
+# must be before including omni part
+TARGET_BOOTANIMATION_SIZE := 1080p
+
 PRODUCT_DEVICE := plato
 PRODUCT_NAME := omni_plato
 PRODUCT_BRAND := Xiaomi
